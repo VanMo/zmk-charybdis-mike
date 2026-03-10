@@ -28,6 +28,7 @@
 };
 
 / {
+    chosen { zmk,matrix_transform = &five_column_transform; };
     behaviors {
         hm_l: homerow_mods_left {
             compatible = "zmk,behavior-hold-tap";
@@ -178,6 +179,7 @@
         };
     };
 };
+
 
 
 
