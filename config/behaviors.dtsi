@@ -8,7 +8,7 @@
 #define HM_TAPPING_TERM_FAST 140  // shorter tapping term for index/pinky (faster fingers)
 #define HM_PRIOR_IDLE 120         // must be idle this long before a hold-tap can become a mod (prevents misfires during fast typing)
 
-/ {
+
     behaviors {
         hm_l: homerow_mods_left {
             compatible = "zmk,behavior-hold-tap";
@@ -43,4 +43,5 @@
             tap-ms = <20>;
         };
     };
-};
+
+
