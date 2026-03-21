@@ -6,28 +6,8 @@
         compatible = "zmk,combos";
 
         //INFO: Mouse clicks - left hand
-        combo_mouse_left_click_l {
-            timeout-ms = <COMBO_TERM>;
-            require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
-            bindings = <&mkp LCLK>;
-            key-positions = <11 12>;
-        };
-
-        combo_mouse_right_click_l {
-            timeout-ms = <COMBO_TERM>;
-            require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
-            bindings = <&mkp RCLK>;
-            key-positions = <12 13>;
-        };
-
-        combo_mouse_middle_click_l {
-            timeout-ms = <COMBO_TERM>;
-            require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
-            bindings = <&mkp MCLK>;
-            key-positions = <11 12 13>;
-        };
-
         //INFO: Mouse clicks - right hand
+
         combo_mouse_left_click_r {
             timeout-ms = <COMBO_TERM>;
             require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
@@ -50,49 +30,37 @@
         };
 
         //INFO: Layer activation
-        combo_layer_scroll_l {
-            timeout-ms = <COMBO_TERM>;
-            require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
-            bindings = <&mo 4>;
-            key-positions = <21 22 23>;
-        };
-
-        combo_layer_snipe_l {
-            timeout-ms = <COMBO_TERM>;
-            require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
-            bindings = <&mo 5>;
-            key-positions = <20 21 22>;
-        };
 
         combo_layer_scroll_r {
             timeout-ms = <COMBO_TERM>;
             require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
-            bindings = <&mo 4>;
+            bindings = <&mo 5>;
             key-positions = <26 27 28>;
         };
 
         combo_layer_snipe_r {
             timeout-ms = <COMBO_TERM>;
             require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
-            bindings = <&mo 5>;
+            bindings = <&mo 6>;
             key-positions = <27 28 29>;
         };
 
         combo_layer_auto {
             timeout-ms = <COMBO_TERM>;
             require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
-            bindings = <&mo 5>;
+            bindings = <&mo 6>;
             key-positions = <3 4>;
         };
 
         combo_layer_dan {
             timeout-ms = <COMBO_TERM>;
             require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
-            bindings = <&mo 2>;
+            bindings = <&mo 3>;
             key-positions = <33 34>;
         };
 
         //INFO: Brackets and braces
+
         combo_paren_l {
             timeout-ms = <COMBO_TERM>;
             require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
@@ -136,6 +104,7 @@
         };
 
         //INFO: System commands
+
         combo_caps_word {
             timeout-ms = <COMBO_TERM>;
             require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
@@ -172,6 +141,7 @@
         };
 
         //INFO: Edit commands
+
         combo_undo {
             timeout-ms = <COMBO_TERM>;
             require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
@@ -201,6 +171,7 @@
         };
 
         //INFO: Special characters
+
         combo_quote {
             timeout-ms = <COMBO_TERM>;
             require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
@@ -248,7 +219,6 @@
             require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
             key-positions = <4 5>;
             bindings = <&bt BT_CLR>;
-            layers = <NUMS>;
         };
     };
 };
