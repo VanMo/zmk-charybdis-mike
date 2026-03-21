@@ -37,13 +37,14 @@
         };
 
         SPECIAL {
-            display-name = "SPECIAL";
             bindings = <
-  &trans  &trans  &trans  &trans  &kp GRAVE    &trans  &trans             &trans  &trans  &kp LEFT_BRACKET
-  &trans  &trans  &trans  &trans  &trans       &trans  &trans             &trans  &trans  &trans
-  &trans  &trans  &trans  &trans  &trans       &trans  &kp RIGHT_BRACKET  &trans  &trans  &trans
-                  &trans  &trans  &trans       &trans  &trans
+  &trans  &trans  &trans  &trans  &kp GRAVE    &trans            &trans             &trans  &trans  &kp LEFT_BRACKET
+  &trans  &trans  &trans  &trans  &trans       &trans            &trans             &trans  &trans  &kp SQT
+  &trans  &trans  &trans  &trans  &trans       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans  &trans  &trans
+                  &trans  &trans  &trans       &trans            &trans
             >;
+
+            label = "SPECIAL";
         };
 
         NUMS {
